@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Register</title>
-    <link rel="stylesheet" href="./src/style.scss">
+    <link rel="stylesheet" href="./src/style/style.scss">
 </head>
 <body>
-
-<input type="text" name="" id="" class="text">
-
+    <input type="text" name="" id="" class="text">
+    <br><br><br><hr><br>
 
     <!------------------->
     <section class="register">
-        
+        <div class="form-register">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+    
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br>
+    
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+    
+            <div class="radios">
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <input type="submit" value="Subscribe!">
+        </div>
     </section>
+
+
 
     <section class="login">
 
     </section>
 
-    <script src="./src/prototypes.ts"></script>
     <script src="./src/app.ts"></script>
 </body>
 </html>

@@ -1,0 +1,112 @@
+$how-many-variation : 5;
+$i: 0.5;
+
+
+// @while $i < $how-many-variation {
+//     // do stuff
+//     $i: $i + 0.5;
+// }
+
+
+@while $i < $how-many-variation {
+    @if $i % 2 == 0 {
+        .p-#{$i} {
+            padding: #{$i}rem;
+        }
+    }
+    @else {
+        $num  : $i + 0.5;
+
+        .p-half-#{$num} {
+            padding: #{$i}rem;
+        }
+    }
+
+    $i: $i + 0.5;
+}
+
+// @while $i < $how-many-variation {
+//     .pr-#{$i} {
+//         padding-right: #{$i}rem;
+//     }
+
+//     $i: $i + 0.5;
+// }
+
+// @while $i < $how-many-variation {
+//     .pl-#{$i} {
+//         padding-left: #{$i}rem;
+//     }
+
+//     $i: $i + 0.5;
+// }
+// @while $i < $how-many-variation {
+//     .pt-#{$i} {
+//         padding-top: #{$i}rem;
+//     }
+
+//     $i: $i + 0.5;
+// }
+// @while $i < $how-many-variation {
+//     .pb-#{$i} {
+//         padding-bottom: #{$i}rem;
+//     }
+
+//     $i: $i + 0.5;
+// }
+
+// @while $i < $how-many-variation {
+//     .px-#{$i} {
+//         padding: 0 #{$i}rem;
+//     }
+
+//     $i: $i + 0.5;
+// }
+// @while $i < $how-many-variation {
+//     .py-#{$i} {
+//         padding: #{$i}rem 0;
+//     }
+
+//     $i: $i + 0.5;
+// }
+
+//!------------------------------------------------[OLD]
+
+// @for $i from 1 through $how-many-variation {
+//     .p-#{$i} {
+//         padding: #{$i}rem;
+//     }
+// }
+
+// @for $i from 1 through $how-many-variation {
+//     .pr-#{$i} {
+//         padding-right: #{$i}rem;
+//     }
+// }
+
+// @for $i from 1 through $how-many-variation {
+//     .pl-#{$i} {
+//         padding-left: #{$i}rem;
+//     }
+// }
+// @for $i from 1 through $how-many-variation {
+//     .pt-#{$i} {
+//         padding-top: #{$i}rem;
+//     }
+// }
+// @for $i from 1 through $how-many-variation {
+//     .pb-#{$i} {
+//         padding-bottom: #{$i}rem;
+//     }
+// }
+
+// @for $i from 1 through $how-many-variation {
+//     .px-#{$i} {
+//         padding: 0 #{$i}rem;
+//     }
+// }
+// @for $i from 1 through $how-many-variation {
+//     .py-#{$i} {
+//         padding: #{$i}rem 0;
+//     }
+// }

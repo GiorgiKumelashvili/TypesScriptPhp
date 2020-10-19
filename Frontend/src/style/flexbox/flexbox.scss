@@ -1,0 +1,64 @@
+.d-flex {
+    display: flex;
+}
+
+@mixin display-center {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+// Direction
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+// Justify Content
+.justify-center {
+    justify-content: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+// Align items
+.align-center {
+    // align-content: center;
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+
+.align-around {
+    align-content: space-around;
+}
+.align-between {
+    align-content: space-between;
+}
+.align-evenly {
+    align-content: space-evenly;
+}
+
+.absolute-center {
+    @include display-center();
+}

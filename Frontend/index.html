@@ -10,29 +10,32 @@
     <input type="text" name="" id="" class="text">
     <br><br><br><hr><br>
 
-    <!------------------->
     <section class="register">
-        <div class="form-register">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name">
-            <br>
-    
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email">
-            <br>
-    
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password">
-    
-            <div class="radios">
-                <input type="radio" id="male" name="gender" value="male" checked>
-                <label for="male">Male</label>
-                
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+        <div class="form-register d-flex flex-column">
+            <div class="name d-flex flex-column">
+                <label class="text-main" for="name">Name: </label>
+                <input type="text" name="name" id="name">
             </div>
             
-            <input type="submit" value="Subscribe!">
+            <div class="email d-flex flex-column">
+                <label class="text-main" for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            
+            <div class="password d-flex flex-column">
+                <label class="text-main" for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+    
+            <div class="radios d-flex align-center">
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label class="text-main px-1" for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label class="text-main pl-1" for="female">Female</label>
+            </div>
+            
+            <button>submit</button>
         </div>
     </section>
 

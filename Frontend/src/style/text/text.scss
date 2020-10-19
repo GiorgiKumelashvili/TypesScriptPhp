@@ -1,0 +1,37 @@
+@use "./font-weight.scss";
+
+$main           : #575563;
+$Dark           : #203647;
+$Light          : #EEFBFB;
+
+$Lightest-Blue  : #4DA8DA;
+$Lighter-Blue   : #007CC7;
+$Dark-Blue      : #12232E;
+
+.text-main {
+    color: $main;
+}
+
+.text-light {
+    color: $Light;
+}
+
+.text-dark {
+    color: $Dark;
+}
+
+.text-primary {
+    color: $Lighter-Blue;
+}
+
+.text-secondary {
+    color: $Lightest-Blue;
+}
+
+.text-success {
+    color: green;
+}
+
+.text-danger {
+    color: red;
+}

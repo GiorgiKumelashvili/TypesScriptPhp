@@ -1,5 +1,14 @@
+@use "./flexbox/flexbox.scss";
+@use './register.scss';
+@use './components/form.scss';
+@use './text/text.scss';
+@use './positions/padding-margin.scss';
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 * {
-    font-family: sans-serif;
+    // font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;

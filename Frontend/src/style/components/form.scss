@@ -1,0 +1,17 @@
+$form-border-radius         : 0.3rem;
+$form-border-height         : 2rem;
+$form-inside-input          : #F6F7FA;
+$form-inside-input-focused  : #d6d6d6;
+
+input {
+    border-radius       : $form-border-radius;
+    border              : 1px solid $form-inside-input-focused;
+    height              : $form-border-height;
+    background-color    : $form-inside-input;
+    padding             : 1rem 0.5rem;
+
+    &:focus {
+        background-color    : $form-inside-input-focused;
+        outline             : none;
+    }
+}
